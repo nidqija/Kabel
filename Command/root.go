@@ -14,8 +14,7 @@ var (
 	VerboseMode bool
 )
 
-// root command is the main command that serves as the entry point for all other commands
-// provides a common interface for users to access the various feature of the application
+
 var rootCMD = &cobra.Command{
 	
 	Use : "Kabel", 
@@ -29,7 +28,7 @@ var rootCMD = &cobra.Command{
 
 }
 
-func Execute(){
+func Execute() {
 
 	if err := rootCMD.Execute(); err != nil {
 		fmt.Println(err)
