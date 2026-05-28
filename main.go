@@ -3,14 +3,14 @@ package main
 
 import (
 	"fmt"
-	"kabel/command"
+	"kabel/Command"
 )
 
 
 
 func main(){
 	fmt.Println("Starting Kabel...")
-	command.Execute()
+	Command.Execute()
 
 
 }
