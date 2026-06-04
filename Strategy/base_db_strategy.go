@@ -18,6 +18,7 @@ type DatabaseStrategy struct {
 	Password          string
 }
 
+
 // interface is used to define the common methods for all database strategies
 type DatabaseStrategyInterface interface {
 	Deploy(ctx context.Context, cli *client.Client, cfg DatabaseStrategy) (string, error)
